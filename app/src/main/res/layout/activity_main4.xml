@@ -2,34 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/btn_base"
+    <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="base1"
+        android:text="전화번호 : "
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/edit1"
+        />
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text1"
         />
     <Button
-        android:id="@+id/btn2_base"
+        android:id="@+id/but1_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/edit1"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:text="base2"
+        android:text="취소"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn2_base"
-        android:layout_toRightOf="@+id/btn_base"
-        android:text="button1"
+        android:layout_below="@+id/edit1"
+        android:layout_toLeftOf="@+id/but1_cancel"
+        android:text="입력"
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_base"
-        android:layout_alignParentRight="true"
-        android:text="button2"
-        />
-
 </RelativeLayout>
